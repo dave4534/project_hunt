@@ -83,7 +83,7 @@ app.controller('notifcontroller', ['$scope', 'mainService', '$state', 'Notificat
 
   $scope.subProj = userService.submitData; //IN SUBMITPROJECT.HTML
 
-console.log(userService.dummyData);
+// console.log(userService.dummyData);
 // userService.getAllDash().then(function(){
 //  console.log("get all dash from detailController");
 //  console.log($scope.x);
@@ -92,7 +92,7 @@ console.log(userService.dummyData);
 // });
 
 $scope.passProj = function(proj){
-  console.log("button works");
+  // console.log("button works");
   userService.submitData.push(proj);
 };
 

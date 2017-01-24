@@ -18,7 +18,7 @@ app.controller('projControl', ['$scope', 'mainService', '$state',  function($sco
 
   $scope.addProject = function (e) {
     // console.log($state.params);
-    console.log('add proj invoked!');
+    // console.log('add proj invoked!');
     if ($scope.name === '') { return; }
 
     var project = { 
@@ -29,16 +29,16 @@ app.controller('projControl', ['$scope', 'mainService', '$state',  function($sco
       langTags:$scope.langTags,
       image_url: $scope.image_url
     };
-    console.log($scope.langTags);
+    // console.log($scope.langTags);
     $scope.langTags.forEach(function(a) {
       $scope.tags.push(a.text);
-      console.log(a);
+      // console.log(a);
     });
-    console.log($scope.tags);
+    // console.log($scope.tags);
     project.langTags = $scope.tags;
      //console.log tags somehow
-      console.log('here are the updated langTags');
-      console.log(project);
+      // console.log('here are the updated langTags');
+      // console.log(project);
 
     $scope.name = '';
     $scope.description = '';
@@ -46,7 +46,7 @@ app.controller('projControl', ['$scope', 'mainService', '$state',  function($sco
     $scope.langTags = '';
     $scope.image_url = '';
 
-    console.log(project);
+    // console.log(project);
     mainService.postToDash(project);
     mainService.getAllDash(project.projCompany);
 
@@ -68,7 +68,7 @@ app.controller('projControl', ['$scope', 'mainService', '$state',  function($sco
 
   $scope.removeProject = function (comp) {
     // $scope.projects.splice(index, 1);
-    console.log(comp);
+    // console.log(comp);
     mainService.removeProj(comp);
   };
 
