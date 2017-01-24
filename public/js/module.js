@@ -1,3 +1,5 @@
+//j
+
 var app = angular.module('projectHunt', ['ui.router', 'ngTagsInput','ui-notification']);
 
 app.config(['$stateProvider', 'NotificationProvider','$urlRouterProvider', function($stateProvider, NotificationProvider, $urlRouterProvider) {

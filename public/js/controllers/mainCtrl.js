@@ -13,7 +13,7 @@ app.controller('mainController', ['$scope', 'mainService', 'userService', '$http
     };
     var qs = $httpParamSerializer(params);
     url = baseUrl + "?" + qs
-    console.log(url);
+    // console.log(url);
     $window.open(url);
   }
 
@@ -28,13 +28,13 @@ app.controller('mainController', ['$scope', 'mainService', 'userService', '$http
   	$scope.codeInput = code
     code = code.substring(0, 20);
     getAccToken(code);
-    console.log(code);
+    // console.log(code);
   })
 
 
   //
   var getAccToken = function(code){
-    console.log("in acc token");
+    // console.log("in acc token");
      $http({
     method: 'POST',
     url: '/gitlog',
@@ -44,8 +44,8 @@ app.controller('mainController', ['$scope', 'mainService', 'userService', '$http
 
   }).then(function successCallback(response){
 
-    console.log("hi");
-    console.log(response.data);
+    // console.log("hi");
+    // console.log(response.data);
     localStorage.setItem('devPic', response.data.devPic);
     // mainService.addUserToDB(response.data);
     findUser(response.data.gitID);
@@ -53,15 +53,15 @@ app.controller('mainController', ['$scope', 'mainService', 'userService', '$http
 }
 
 var findUser = function(userId){
-  console.log(userId);
+  // console.log(userId);
   userService.idCheck(userId);
 }
 
 
 mainService.getAll().then(function(){
-  console.log('controller getAll invoked');
+  // console.log('controller getAll invoked');
   // $scope.companies = mainService.companies;
-  console.log($scope.companies);
+  // console.log($scope.companies);
 }).catch(function(err){
   console.log(err);
 });
