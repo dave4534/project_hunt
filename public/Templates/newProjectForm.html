@@ -1,0 +1,88 @@
+
+
+
+
+<!--  Nav Bar -->
+  <div class="row navBar">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+     <a href="#/home"> 
+     <img src="images/logo.png" class="Elevlogo">
+     <!-- <img src="images/elevlogoMobile.png" class="elevlogoMobile"> -->
+     </a>
+    </div>
+
+
+     <div class="navBarMiddleColumn col-xs-6 col-sm-6 col-md-6 col-lg-6">
+     
+    </div>
+
+    <div class="navBarRightColumn col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <a href="#/dashboard/{{empDashPath.name}}"><img src="images/biz.png" class="profilePic"></a> 
+    <a href="#/welcome"><div class="logoutButton">Log out</div></a>
+    
+
+    </div>
+  </div>
+   <!--  End of Nav Bar -->
+   <hr>
+
+<div class="background" style="height: 3500px;">
+
+               
+ <div class="projHeader">Projects by {{empDashPath.name}}</div>
+
+ <a href="#/dashboard/createproject/{{empDashPath.name}}"><div class="createProjButton">Create Project</div></a> 
+
+
+  <!-- Ng-Repeat of Companies & Projects Rows-->
+  <div class="companyAndProjectRepeatContainer">
+
+    <div class="row companyAndProjectRepeat" ng-repeat="company in companies | filter: {projCompany, projTitle:searchBar} track by $index">
+
+      <!-- Logo and Company Name + Project Name Row -->
+      <div class="projectRow">
+      <!-- Logo -->
+          <div class="leftProjColumn">
+               <img class="logo" ng-src="http://placekitten.com/g/60/60"/>
+           </div>
+          
+          <div class="rightProjColumn">
+              <div class="projTitle">{{company.projTitle}}</div>
+              <button class="remove pull-right" ng-click="removeProject(this.company)">remove</button>
+             <div class="projCompany">{{company.projCompany}}</div>
+           
+          </div>
+       </div>
+      
+      <!-- Project Info Row -->
+      <div class="projectRow">
+     <!-- Company Name & Location -->
+     <div class="info">
+      <div class="projDescription" >{{company.projDescription}}</div>
+      
+    </div>
+    </div>
+      <div class="tagHeader">Project Technologies:</div>
+    <div class="projectRow tagRow"> 
+    <div class="tagRepeat tagContainer" ng-repeat="tag in company.langTags track by $index">
+        <div class="tag">{{tag}}</div> 
+      </div>
+      </div>
+
+    <div class="projectRow"> 
+     <div ng-click="success()" class="startButton">Edit</div>
+    </div>
+    
+
+  </div>
+</div>
+<!--  End of Row -->
+
+        </div>
+      
+    </div>
+  </div>
+
+
+</div>
+

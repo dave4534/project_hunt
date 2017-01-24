@@ -1,0 +1,909 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One');
+
+a:hover {
+  text-decoration: none;
+}
+
+html {
+  height: 100% !important;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+/*  width: 100%;
+  height: 100%;*/
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.row {
+  margin: 0px;
+}
+
+.navBar {
+  height: 60px;
+  width: 100%;
+/*  border: 1px solid black;
+*/}
+
+.Elevlogo {
+  width: 150px;
+  margin: 16px 0 0 10px;
+  display: block;
+}
+
+.userPic {
+  width: 50px;
+  margin: 16px 0 0 10px;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.elevLogoMobile {
+  display: none;
+}
+
+.Elevlogo:hover {
+  cursor: pointer;
+}
+
+.searchBar {
+  width: 100%;
+  margin: 15px 0px 12px 0px;
+}
+
+.navBarMiddleColumn {
+  height: 60px;
+}
+
+.profilePic {
+  width: 50px;
+  margin: 7px 7px 7px 0px;
+  float: right;
+}
+
+.anyButton {
+    background-color: #f16763;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: .9em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    letter-spacing: .06em;
+}
+
+.anyButton:hover, .createProjButton:hover {
+  background-color: #f77975;
+  cursor: pointer;
+}
+
+.aboutButton, .projectsButton {
+    /*background-color: #f16763;*/
+    margin: 0 auto;
+    padding: 10px;
+    font-size: .9em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    letter-spacing: .06em;
+    float: right;
+    margin: 14px 5px 0px 0px;
+}
+
+.logoutButton {
+    /* background-color: #f16763; */
+    margin: 0 auto;
+    padding: 10px;
+    font-size: .9em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: #f16763;
+    width: 100px;
+    letter-spacing: .06em;
+    float: right;
+    margin: 14px 5px 0px 0px;
+}
+
+.createProjButton {
+    background-color: #f16763;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: .9em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+    width: 200px;
+    letter-spacing: .06em;
+    margin-bottom: 30px;
+}
+
+.aboutButton:hover, .projectsButton:hover {
+  color: #f16763;
+  cursor: pointer;
+}
+
+.navSignupButton {
+  float: right;
+  margin: 14px 5px 0px 0px;
+}
+
+hr {
+  border-top: 1px solid #e2e2e2;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+
+}
+
+.tagBar {
+  height: 40px;
+  /*background-color: #fbfbfb;*/
+  overflow: hidden;
+}
+
+.tagBarTag {
+  margin-left: 25px;
+  padding: 11px 0px 40px 0px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: .94em;
+  display: inline-block;
+  letter-spacing: .05em;
+  color: #301a3e;
+}
+
+.tagBarTag:hover {
+  color: #f16763;
+  cursor: pointer;
+}
+
+.header {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: #f16763;
+    font-size: 3em;
+    padding: 30px 0 30px 0;
+    font-weight: bold;
+    background-color: #edeff0;
+}
+
+.homeHeader {
+      text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: #f16763;
+    font-size: 3em;
+    padding: 22px 0 9px 0;
+    font-weight: bold;
+    background-color: #edeff0;
+}
+
+.projHeader {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: #f16763;
+    font-size: 3em;
+    padding: 24px 0 30px 0;
+    font-weight: bold;
+    /* background-color: #edeff0; */
+    display: inline-block;
+    /* margin: 0 auto; */
+    height: 107px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.columnContainer {
+    max-width: 240px;
+    margin: 0 auto;
+}
+
+.subheader {
+    color: #333;
+    /* width: 100%; */
+    text-align: center;
+    margin: 0 auto;
+    font-family: nunito;
+    font-size: 1.35em;
+    letter-spacing: .03em;
+    max-width: 600px;
+    padding-bottom: 40px;
+}
+
+.homeSubheader {
+      color: #333;
+background-color: #edeff0;
+    text-align: center;
+    margin: 0 auto;
+    font-family: nunito;
+    font-size: 1.35em;
+    letter-spacing: .03em;
+    padding-bottom: 25px;
+}
+
+.background {
+  background-color: #edeff0;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  z-index: 0;
+  /*background-repeat: repeat;*/
+}
+
+.submitBackground {
+  background-color: #edeff0;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  z-index: 0;
+}
+
+.companyAndProjectContainer {
+  border: 1px solid #e2e2e2;
+}
+
+/*Contains all of the ng-repeats that display eac company & project*/
+.companyAndProjectRepeatContainer {
+    /*height: 400px;*/
+    background-color: #edeff0;
+    /* margin: 18px 30px 50px 30px; */
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
+    /* box-shadow: 0px 2px 3px 2px rgba(45, 45, 45, 0.13); */
+    /*height: 100%;*/
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.companyAndProjectRepeat {
+    background-color: white;
+    /* border: 1px solid #e2e2e2; */
+    margin-bottom: 26px;
+    box-shadow: 0px 3px 25px 2px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+}
+
+.companyAndProjectRepeat:hover {
+  cursor: pointer;
+  background-color: #fbfbfb;
+}
+
+.projectRow {
+  width: 100%;
+  /*height: 65px;*/
+  /*border: 1px solid red;*/
+}
+
+.tagHeader {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+    letter-spacing: .07em;
+    margin: 6px 0 0 85px;
+    color: #301a3e;
+}
+
+.tagRow {
+  margin: -3px 0px 16px 15px;
+  padding-right: 2px;
+  padding-left: 71px;
+}
+
+.tagContainer {
+  margin: 3px 1px 0px -1px;
+}
+
+.logo {
+    /* display: inline-block; */
+    width: 35px;
+    border-radius: 4px;
+    /* vertical-align: text-bottom; */
+    margin: 0px 15px 25px 28px;
+    position: relative;
+    top: 24px;
+}
+
+.leftProjColumn {
+  /*border: 1px solid red;*/
+  display: inline-block;
+  float: left;
+}
+
+.rightProjColumn {
+  /*border: 1px solid red;*/
+  display: inline-block;
+  margin-left: 4px;
+  width: 230px;
+}
+
+.info {
+  color: #444444;
+  display: inline-block;
+  margin: 11px 0 0 87px;
+}
+
+.projTitle {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .04em;
+    font-size: 1.6em;
+    color: #f16763;
+    margin-top: 15px;
+    text-transform: capitalize;
+    margin-left: 3px;
+    margin-right: -14px;
+/*    border: 1px solid red;*/
+    overflow: hidden;
+}
+
+.projCompany {
+    font-family: helvetica;
+    font-size: 1.05em;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #797979;
+    margin-top: 8px;
+    /*margin-left: 86px;*/
+    margin-left: 3px;
+}
+
+.projDescription {
+  font-family: helvetica;
+  color: #4c4c4c;
+  letter-spacing: .06em;
+  margin-right: 30px;
+  margin-top: -5px;
+  font-weight: 100;
+}
+
+.startButton {
+     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: .09em;
+    height: 51px;
+    background-color: #3ca763;
+    color: white;
+    padding: 13px 10px 0px 10px;
+    padding-bottom: 17px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+
+.startButton:hover {
+  cursor: pointer;
+  background-color: rgba(60, 167, 99, 0.73);
+}
+
+.tagRepeat {
+  display: inline-block;
+}
+
+.tag {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7em;
+  letter-spacing: .07em;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #301a3e;
+  display: inline-block;
+  padding: 5px 10px 0px 10px;
+  padding-bottom: 17px;
+  border-radius: 4px;
+  margin: 10px 11px -3px 1px;
+}
+
+/*.tag:hover {
+  background-color: #301a3e;
+  color: white;
+}*/
+
+.readmore {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
+  letter-spacing: .07em;
+  height: 20px;
+  background-color: white;
+  display: inline-block;
+  padding: 5px 10px 0px 10px;
+  padding-bottom: 17px;
+  border-radius: 4px;
+  margin: 10px 11px 12px 1px;
+  text-decoration: none;
+}
+
+/*Register Form*/
+.form-style {
+margin: 0 auto;
+width:250px;
+}
+
+.submit-button{
+background-color: #AFCB2D ;
+color: white;
+}
+
+button{
+color:;
+height:50px;
+width:100px;
+margin: -20px -50px;
+position:relative;
+top:50%;
+left:50%;
+}
+/*Register Form (above)*/
+
+/*Elisha's forwarding/navbar css*/
+.signup{
+      font-style: oblique;
+      font-size: 16px;
+  }
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+
+    .inner {
+        padding-left: 1em;
+        overflow: hidden;
+        display: none;
+
+        &.show {
+          /*display: block;*/
+        }
+    }
+
+    li {
+        margin: .5em 0;
+
+        a.toggle {
+            width: 100%;
+            display: block;
+            background: rgba(0,0,0,0.78);
+            color: #fefefe;
+            padding: .75em;
+            border-radius: 0.15em;
+            transition: background .3s ease;
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.9);
+            }
+        }
+    }
+}
+
+
+/*Splash*/
+.splashContainer {
+  /*background-image: url("images/splash2.jpg") no-repeat center center fixed;*/
+background: url(../images/splash2.jpg) ;
+ /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+ /*background-color: black;*/
+/* height: 100%;
+ min-height: 100%;*/
+ background-position: center center;
+      background-repeat:  no-repeat;
+      background-attachment: fixed;
+      background-size:  cover;
+      /*background-color: #999;*/
+}
+
+.splashHeader {
+    color: #ffffff;
+    font-size: 3.9em;
+    text-align: center;
+    display: inherit;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.2em;
+    padding-top: 50px;
+}
+
+.aboutHeader {
+      color: #ffffff;
+    font-size: 3.9em;
+    text-align: center;
+    display: inherit;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.2em;
+    padding-top: 50px;
+        margin: 0 0 20px;
+}
+
+.allonImage{
+    width: 180px;
+    height: 180px;
+    border-radius: 500px;
+    /* border: 10px solid #333; */
+    background-image: url(../images/allon.png);
+    margin: 0 auto;
+}
+
+.daveImage{
+    width: 180px;
+    height: 180px;
+    border-radius: 500px;
+    /* border: 10px solid #333; */
+    background-image: url(../images/elisha.png);
+    margin: 0 auto;
+}
+
+.odedImage{
+    width: 180px;
+    height: 180px;
+    border-radius: 500px;
+    /* border: 10px solid #333; */
+    background-image: url(../images/dave.png);
+    margin: 0 auto;
+}
+
+.elishaImage{
+    width: 180px;
+    height: 180px;
+    border-radius: 500px;
+    /* border: 10px solid #333; */
+    background-image: url(../images/oded.png);
+    margin: 0 auto;
+}
+
+.splashSubheader {
+    color: #ffffff;
+    font-size: 1.55em;
+    text-align: center;
+    display: inherit;
+    font-family: nunito;
+    font-weight: 100;
+    line-height: 1.4em;
+    letter-spacing: .08em;
+    padding: 2px 35px;
+}
+
+.aboutSubheader {
+    color: #ffffff;
+    font-size: 1.25em;
+    text-align: center;
+    display: inherit;
+    font-family: nunito;
+    font-weight: 100;
+    line-height: 1.4em;
+    letter-spacing: .08em;
+    padding: 2px 35px;
+    margin: 0 76px;
+}
+
+.splashHeader2 {
+  font-family: 'Fugaz One', cursive;
+  letter-spacing: .04em;
+}
+
+.buttonContainer {
+  /*background-color: yellow;*/
+}
+
+.splashButton:hover {
+  cursor: pointer;
+  background-color: #f77975;
+  text-decoration: none;
+}
+
+.splashButton {
+    background-color: #f16763;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: .9em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+    width: 16em;
+    letter-spacing: .07em;
+    margin-top: 2em;
+    text-decoration: none;
+}
+
+.splashButton:link {
+  text-decoration: none;
+}
+
+.continueButton {
+    background-color: #f16763;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: .9em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+    width: 14em;
+    letter-spacing: .07em;
+    margin-top: 5em;
+    margin-bottom: 200px;
+    text-decoration: none;
+}
+
+.iconRow {
+  width: 100%;
+}
+
+.poweredByRow {
+    font-size: 1.1em;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    padding: 100px 0 50px 0;
+    font-weight: 100;
+    /* width: 100%; */
+}
+
+.poweredByRow>img {
+    vertical-align: middle;
+    /* margin-right: 23px; */
+    margin-bottom: 7px;
+    height: 2.8em;
+}
+
+.poweredByLogo>img {
+    vertical-align: middle;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.iconContainer {
+  display: inline-block;
+  margin: 35px 0 0 0;
+}
+
+.splashIconHeader {
+    color: white;
+    font-family: nunito;
+    font-size: 1.3em;
+    margin: 1em 2em 0 2em;
+    text-align: center;
+    letter-spacing: .05em;
+}
+
+
+.formContainer {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/*Media Queries*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+.companyAndProjectRepeat {
+    background-color: white;
+    /* border: 1px solid #e2e2e2; */
+    /* margin-bottom: 26px; */
+    box-shadow: 0px 3px 25px 2px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    margin: 0 30px 26px 30px;
+}
+
+.buttonContainer {
+    padding-left: 1em;
+    margin: .9em 0 0 0;
+}
+
+.iconContainer {
+    display: inline-block;
+    margin: 20px 0 0 0;
+}
+
+.splashButton {
+    background-color: #f16763;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 18px;
+    font-size: 1.1em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+    width: 16em;
+    letter-spacing: .08em;
+    /* margin: .5em; */
+    text-decoration: none;
+    /* display: inline-block; */
+}
+
+.splashHeader {
+    color: #ffffff;
+    font-size: 3.5em;
+    text-align: center;
+    display: inherit;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.4em;
+    padding-top: 20px;
+    padding-bottom: 6px;
+}
+
+.splashHeader2 {
+  font-family: 'Fugaz One', cursive;
+  letter-spacing: .04em;
+  font-size: 1em;
+      line-height: 1em;
+}
+
+.projectsButton, .aboutButton {
+  display: none;
+}
+
+.poweredByRow {
+    font-size: 1.1em;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    padding: 100px 0 20px 0;
+    font-weight: 100;
+    /* width: 100%; */
+}
+
+.projTitle {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .04em;
+    font-size: 1.4em;
+    color: #f16763;
+    margin-top: 17px;
+    text-transform: capitalize;
+    margin-left: 3px;
+    margin-right: -14px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+.projHeader {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: #f16763;
+    font-size: 3em;
+    padding: 9px 0 0px 0;
+    font-weight: bold;
+    /* background-color: #edeff0; */
+    display: inline-block;
+    /* margin: 0 auto; */
+    height: 79px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+
+.ElevLogo {
+    display: none;
+  }
+.elevLogoMobile {
+    display: block;
+  }
+
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+
+.companyAndProjectRepeat {
+    background-color: white;
+    /* border: 1px solid #e2e2e2; */
+    /* margin-bottom: 26px; */
+    box-shadow: 0px 3px 25px 2px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    margin: 0 30px 26px 30px;
+    }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 400px) {
+
+.companyAndProjectRepeat {
+    background-color: white;
+    /* border: 1px solid #e2e2e2; */
+    /* margin-bottom: 26px; */
+    box-shadow: 0px 3px 25px 2px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    margin: 0 30px 26px 30px;
+    }
+
+.tagRow {
+    margin: -3px 0px 16px 15px;
+    padding-right: 3px;
+    padding-left: 71px;
+}
+
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

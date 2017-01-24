@@ -1,0 +1,60 @@
+<!--  Nav Bar -->
+  <div class="row navBar">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+     <a href="#/home"> 
+     <img src="images/logo.png" class="Elevlogo">
+     <!-- <img src="images/elevlogoMobile.png" class="elevlogoMobile"> -->
+     </a>
+    </div>
+
+
+     <div class="navBarMiddleColumn col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      
+    </div>
+
+    <div class="navBarRightColumn col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+    <a href="#/dashboard/{{empDashPath.name}}"><img src="images/biz.png" class="profilePic"></a> 
+    <a href="#/welcome"><div class="logoutButton">Log out</div></a>
+    </div>
+  </div>
+   <!--  End of Nav Bar -->
+   <hr>
+
+<div class="header" style="background-color: white;">Add a new project</div>
+
+<div class="subheader">
+ Please describe the project as best you can below and click 'Add' to add your project
+</div>
+
+<div class="formContainer">
+
+<form ng-submit="addProject(e)" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+        
+
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Project Name" ng-model="name"/>
+        </div>
+
+        <div class="form-group">
+          <input type="date" class="form-control" placeholder="Due date" ng-model="date"/>
+        </div>
+        
+        <!-- Lang Tags -->
+        <!-- <div class="form-group" ng-controller="tagController"> -->
+        <div class="form-group">
+          <tags-input type="text" placeholder="Press tab to add tag" ng-model="langTags"></tags-input>
+        </div>
+
+        <div class="form-group">
+          <textarea type="text" class="form-control" rows="10" placeholder="project description" ng-model="description"></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="file" class="form-control" placeholder="Upload a file" ng-model="image_url" id="files"/>
+          <img id="image" style="max-width: 200px;" />
+        </div>
+
+        <a href="#/dashboard/{{empDashPath.name}}"><div type="submit" class="anyButton" ng-controller="notifcontroller" ng-click="addProject(e); success() ">Add</div></a> 
+      </form>
+      </div>
